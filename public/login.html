@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <link rel="stylesheet" type="text/css" href="https://blog.huangwx.cn/css/sweetalert.css">
+<script type="text/javascript" src="https://blog.huangwx.cn/js/sweetalert-dev.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <title>8Kraw</title>
+  <style>
+    .phone_err{
+    color: red;
+    display: none;
+  }
+  .password_err{
+    color: red;
+    display: none;
+  }
+   body{
+     background-color: rgb(8, 8, 8);
+     background: url(./img/loginbg.jpg) no-repeat;
+   }
+    *{
+      padding: 0px;
+      margin: 0;
+    }  
+    .dh{
+      width: 100%;
+      height: 50px;
+      margin: auto; 
+      background-color:rgba(0, 0, 0, 0.8)
+    }
+    .center {
+      width: 1170px;
+      margin: auto;
+    }
+    .dh div{
+      float: left;
+    }
+    .dh div a{
+      width: 100px;
+      height: 100%;
+
+    }
+    .dh .dhyou a:hover {background-color: #222;}
+    .dh .dhzuo a:hover {background-color: #222;}
+    .dh .logo img{
+      width: 150px;
+      height: 50px;
+    }
+    .dh .logo{
+      margin-right: 50px;
+      display: inline-block;
+    }
+    .dh a{
+      display: inline-block;
+      width: 120px;
+      height: 30px;
+      color:#fff;
+      font-size: 14px;
+      text-align: center;
+      text-decoration:none
+    }
+    .dh .dhyou{
+      float: right;
+      margin-right: 15px;
+    }
+    .dh .dhyou,.dhzuo{
+      height: 50px;
+      line-height: 50px;
+    }
+    .bq{
+      width: 100%;
+      height: 200px;
+      margin: auto;
+      background-color: #191919;
+      position: relative
+    }
+    .bq .weibu{
+      /* width: 1170px; */
+     
+      margin: auto;
+      padding-top: 30px;
+      
+    }
+    .weibu li{
+      float: left;
+       padding-left: 50px;
+      list-style: none;
+      color: #999999;
+      margin: 0 32px;
+      font-size: 15px;
+    }
+    .weibu li a,.banhao a{
+      text-decoration:none
+    }
+    .weibu li a,.banhao a {
+       color:rgb(104, 103, 103);
+     }
+    .weibu li a,.banhao a {
+       color:rgb(104, 103, 103);
+     }
+    .weibu li a,.banhao a {
+       color:rgb(104, 103, 103);
+     }
+    .weibu li a,.banhao a{
+       color:rgb(104, 103, 103);
+     }
+    .fenge{
+      width: 61%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    .banhao{
+      /* width: 1170px; */
+      /* margin: auto; */
+      padding-top: 30px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -130px;
+      margin-top: -20px;
+      
+      color: #666666;
+    }
+    .banhao h5{
+      margin-bottom: 15px;
+    }
+    .neirong{
+      width: 100%;
+      height: 100%;
+      margin: 200px 0;
+    }
+  
+   .neirong  a:link{
+       color:rgb(104, 103, 103);
+     }
+    .neirong  a:visited{
+       color:rgb(104, 103, 103);
+     }
+    .neirong  a:hover {
+       color:rgb(104, 103, 103);
+     }
+    .neirong  a:active{
+       color:rgb(104, 103, 103);
+     }
+     .neirong .input {
+       text-align: center;
+     }
+     .neirong input{
+       font-size: 23px;
+      background-color:transparent;
+      border-radius: 6px; 
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #DBDBDB;
+     }
+     .neirong button{
+       color:#DBDBDB;
+      width: 290px;
+      height: 30px;
+      border: 1px solid #DBDBDB;
+      background-color:transparent;
+      border-radius: 15px;
+      
+      margin-bottom: 10px;
+     }
+     .neirong .logo .box {
+       width: 100%;
+       height: 117px;
+       position: relative;
+     }
+     .neirong .logo img{
+      width: 115px;
+      height: 115px;
+      border-radius: 50% / 50%; 
+      border: 1px solid #DBDBDB;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin-left: -58px;
+     }
+     .dorp{
+   position: relative;
+  display: inline-block;
+    }
+
+.dorp_con{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp_con1{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp:hover .dorp_con{display:block;}
+.dorp:hover .dorp_con1{display:block;}
+  </style>
+</head>
+<body>
+  <!-- 以下是整个页面 -->
+   <div class="zong" style="min-width: 1170px;">
+     <!-- 以下是整个导航 -->
+     <div class="dh fixed-top" style="min-width: 900px;">
+      <div class="logo" ><a href="./index.html"><img src="./img/logo.png" alt=""></a></div>
+      <div class="dhzuo">
+         <a href="./index.html">视频</a>
+         <a href="./Pic.html">图片</a>
+         <a href="./problem.html">常见问题</a>
+         <a href="./about.html">关于我们</a>
+      </div>
+      <div class="dhyou">
+         <a href="./login.html">登录</a>
+         <a href="#">EN</a>
+      </div>
+     </div>
+    <!-- 以上是整个导航 -->
+
+    <!-- 以下是内容部分 -->
+       <div class="neirong">
+       <div class="logo">
+         <div class="box">
+           <img src="./img/loginlogo.jpg" alt="">
+         </div>
+       </div>
+       <div class="input">
+      <input type="text" placeholder="  可用的手机号码" id="phone" class="phone"><br>
+      <div class="phone_err">手机号码格式不正确</div>
+      <input type="text" placeholder="  请输入您的密码" id="password" class="password"><br>
+      <div class="password_err">请输入密码</div>
+
+      <button id="btn">登录</button><br>
+      <a href="./register.html" target="_self">注册新用户</a>
+      <a href="./Forgetpassword.html" target="_self">忘记密码</a>
+      <div id="show"></div>
+       </div>
+     </div>
+    <!-- 以上是内容部分 -->
+    <!-- 以下是版权部分 -->
+    <div class="bq" style="position: fixed;bottom: 0px;">
+      <!-- 以下是链接部分 -->
+     <div class="weibu">
+       <div class="center">
+        <ul class="clearfix">
+          <li>
+          更多信息
+          <a href="./about.html">关于我们</a>
+          |
+          <a href="./about.html">我们的宗旨</a>
+         </li>
+         <li >
+           常见问题
+         <a href="./problem.html">素材版权</a>
+         |
+         <a href="./problem.html">素材价格与购买方式</a>
+         |
+         <a href="./problem.html">摄影师签约</a>
+       </li>
+ 
+         <li>联系我们
+         <a href="./problem.html">意见与建议</a>
+         |
+          <a href="#">商务合作</a>
+         </li>
+        </ul>   
+       </div> 
+     </div>
+    <!-- 以上是链接部分 -->
+     <div class="fenge">
+       <br style="background-color: #191919;" >
+       <hr>
+     </div>
+     <div class="banhao">
+       <h6>©2017-2020 ICP备17045390号-1</h6>
+       <img src="../img/jh.png" alt="">
+       <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902002882">沪公网安备 31010902002882号</a>
+     </div>
+
+    </div>
+    <!-- 以上是版权部分 -->
+     </div>
+   <!-- 以上是整个页面 -->
+   <script>
+   let myphone=document.querySelector('.phone')
+   let mypassword=document.querySelector('.password')
+   myphone.onblur=function(){
+     let reg_phone=/^1[1-9]\d{9}$/
+      let phone_err=document.querySelector('.phone_err')
+      if(reg_phone.test(myphone.value)){
+        console.log('格式正确')
+        this.style.borderColor=''
+        phone_err.style.display=null
+      }else {
+        console.log('格式不正确')
+        this.style.borderColor='red'
+        phone_err.style.display='block'
+      }
+   }
+   mypassword.onblur=function(){
+     let password_err=document.querySelector('.password_err')
+     if(password.value==''){
+      this.style.borderColor='red'
+       password_err.style.display='block'
+     }else {
+      this.style.borderColor=''
+      password_err.style.display=null
+     }
+   }
+   
+   
+  var phone = document.getElementById('phone')
+  var password = document.getElementById('password')
+  var show = document.getElementById('show')
+  var btn = document.getElementById('btn')
+
+  //点击按钮
+  btn.onclick= function(){
+    //获取用户输入的手机号
+    var phoneval = phone.value
+    var passwordval=password.value
+    //ajax四步
+    var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+        
+
+          
+          if(result.code == 1){
+            sessionStorage.setItem("user",`${result.data[0].lid},${result.data[0].names}`)
+        
+            show.innerHTML = `<meta http-equiv="refresh" content="0.1;url=index.html">`
+          }else swal(result.msg)
+        }
+      }
+    }
+    xhr.open("POST","/user/login",true)
+    xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded")
+    xhr.send(`phone=${phoneval}&password=${passwordval}`)
+  }
+   </script>
+</body>
+</html>

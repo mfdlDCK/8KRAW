@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <title>8Kraw</title>
+  <style>
+   body{
+     background-color: rgb(8, 8, 8);
+     
+   }
+    *{
+      padding: 0px;
+      margin: 0;
+    }
+    
+    .dh{
+      width: 100%;
+      height: 50px;
+      margin: auto; 
+      
+      background-color:rgba(0, 0, 0, 0.8)
+      
+    }
+    .center {
+      width: 1170px;
+      margin: auto;
+    }
+    .dh div{
+      float: left;
+    }
+    .dh div a{
+      width: 100px;
+      height: 100%;
+
+    }
+    .dh div a:hover {background-color: #222;}
+    .dh .logo img{
+      width: 150px;
+      height: 50px;
+    }
+    .dh .logo{
+      margin-right: 20px;
+      display: inline-block;
+    }
+    .dh a{
+      display: inline-block;
+      width: 120px;
+      height: 30px;
+      color:#fff;
+      font-size: 14px;
+      text-align: center;
+      text-decoration:none
+    }
+    .dh .dhyou{
+      float: right;
+      margin-right: 15px;
+    }
+
+    .dh .dhyou,.dhzuo{
+      height: 50px;
+      line-height: 50px;
+    }
+    .banner{
+      width: 100%;
+      height: 515px;
+      position: relative
+    }
+   .banner .bannerimg {
+      width: 100%;
+      background: url('./img/banner.jpg') no-repeat;
+      height: 515px;
+    }
+    .banner .ssk{
+      color: #fff;
+      text-align: center;
+      float: left; 
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -330px;
+      margin-top: -110px;
+    }
+    .neirong{
+      /* width: 1170px; */
+      
+      margin: auto;
+    }
+    .neirong .lbt{
+      /* width: 1170px; */
+      height: 181.3px;
+      margin: auto;
+    }
+    .neirong .zuo{
+      margin-left: 20px;
+      font-size: 18px;
+      float: left;
+      color: white;
+    }
+    .neirong  .you{
+      float: right
+    }
+    .neirong  .you a{
+      margin-right: 5px;
+      font-size: 14px;
+      text-decoration:none
+    }
+    .neirong  a:link, .weibu li a,.banhao a {
+       color:rgb(104, 103, 103);
+     }
+    .neirong  a:visited,.weibu li a,.banhao a {
+       color:rgb(104, 103, 103);
+     }
+    .neirong  a:hover,.weibu li a,.banhao a {
+       color:rgb(104, 103, 103);
+     }
+    .neirong  a:active ,.weibu li a,.banhao a{
+       color:rgb(104, 103, 103);
+     }
+    .neirong .photo img {
+       width: 282.5px;
+       height: 154px;
+       margin: 3px;
+    }
+    .neirong .photo video {
+       width: 282.5px;
+       height: 154px;
+       margin: 3px;
+       display: inline-block;
+    }
+    .shou{
+      cursor: pointer;
+    }
+    .bq{
+      width: 100%;
+      height: 200px;
+      margin: auto;
+      background-color: #191919;
+      position: relative
+    }
+    .bq .weibu{
+      /* width: 1170px; */
+     
+      margin: auto;
+      padding-top: 30px;
+      
+    }
+    .weibu li{
+      float: left;
+       padding-left: 50px;
+      list-style: none;
+      color: #999999;
+      margin: 0 32px;
+      font-size: 15px;
+    }
+    .weibu li a,.banhao a{
+      text-decoration:none
+    }
+    .fenge{
+      width: 61%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    .banhao{
+      /* width: 1170px; */
+      margin: auto;
+      padding-top: 30px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -130px;
+      margin-top: -20px;
+      
+      color: #666666;
+    }
+    .banhao h5{
+      margin-bottom: 15px;
+    }
+   .ssklogo{
+background-image: url(./img/ss.png);/*设置小图标*/
+
+background-size: 25px 25px;/*小图标的大小*/
+
+background-position: 13px 11px;/*小图标在input的位置*/
+
+background-repeat: no-repeat;/*背景小图标不重复*/
+
+padding: 8px 10px 8px 40px;/*设置input内边距*/
+
+/*设置input样式好看*/
+      width: 650px;
+      height: 51px;
+      background-color: white;
+      border:1px solid #999999;
+      border-radius: 7px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      text-indent: 25px
+
+}
+.neirong .fd img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.neirong .fd img:hover{
+  transform: scale(1.1);
+}
+    .hot a{
+      
+      text-decoration:none
+    }
+    .hot  a:link{
+       color:white;
+     }
+     .hot  a:visited{
+       color:white;
+     }
+    .hot  a:hover {
+       color:white;
+       
+     }
+     .hot  a:active{
+       color:white;
+     }
+     .dorp{
+   position: relative;
+  display: inline-block;
+    }
+
+.dorp_con{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp_con1{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp:hover .dorp_con{display:block;}
+.dorp:hover .dorp_con1{display:block;}
+.dorp_con #sc {
+  display: flex;
+}
+  </style>
+</head>
+<body>
+  <!-- 以下是整个页面 -->
+   <div class="zong" style="min-width: 1170px;">
+     <!-- 以下是整个导航 -->
+     <div class="dh fixed-top" style="min-width: 900px;"> 
+      <div class="logo"><img src="./img/logo.png" alt=""></div>
+      <div class="dhzuo">
+         <a href="./index.html">视频</a>
+         <a href="./Pic.html">图片</a>
+         <a href="./problem.html">常见问题</a>
+         <a href="./about.html">关于我们</a>
+      </div>
+      <div class="dhyou" id="user" style="margin-right: 50px;">
+         <a href="./login.html" target="_self">登录</a>
+         <a href="#">EN</a>
+         
+      </div>
+     </div>
+    <!-- 以上是整个导航 -->
+    <!-- 以下是banner -->
+     <div class="banner">
+       <!-- 背景 -->
+        <div class="bannerimg">
+          <!-- <img src="./img/banner.jpg" alt=""> -->
+        </div>
+      <!-- 搜索框 -->
+        <div class="ssk">
+          <!-- 标语 -->
+          <h1 style="font-size: 40px;"><b>正版超清素材库</b></h1>
+          <h3 style="font-size: 18px;">数百位优秀摄影师，海量超清正版素材</h3>
+           <!-- 搜索框 -->
+          <div class="inputbox">
+            <!-- <form action="./search.html"> -->
+                <input type="text" onkeydown="fun1(event)" placeholder="搜索视频素材" autocomplete="off" class="ssklogo" id="sskid" oninput="fun()">
+            <!--</form>
+-->                
+          </div>
+          <!-- 热搜 -->
+          <div class="hot">
+              当前热搜： 
+              <span ><a href="./search.html" onclick="fun2(this)">城市</a></span>
+              <span ><a href="./search.html" onclick="fun2(this)">星空</a></span>
+              <span ><a href="./search.html" onclick="fun2(this)">武汉</a></span>
+              <span ><a href="./search.html" onclick="fun2(this)">长江</a></span>
+              <span ><a href="./search.html" onclick="fun2(this)">现代</a></span>
+            </div> 
+        </div>    
+     </div>
+    <!-- 以上是整个banner -->
+    <!-- 以下是内容部分 -->
+    <div class="neirong">
+        <div class="center">
+        <!-- 以上下是轮播图 -->
+        <div class="lbt" style="padding: 40px 0px 0px">
+           <img src="./img/lbt1.png" alt="轮播图" srcset="" style="width: 100%;">
+        </div>
+        <!-- 以上是轮播图 -->
+        <!-- 以下是8K -->
+         <div class="bK fd">
+            <div class="bt">
+               <br><br>
+               <div class="zuo">
+                  <h3>旅游随拍</h3>
+               </div>
+               <div class="you">
+                  <a href="./search.html"onclick="fun8K()" >查看更多</a>
+               </div>
+            </div>
+            <div class="photo shou">
+              <br><br>
+              <video    x-webkit-airplay="true"  webkit-playsinline="true" loop='loop' muted=""  alt="190" onclick="details(190,1)">
+                <source src="https://videos.8kraw.com/720p/87669a1dd54540278e38d9715bb887a8_720p.mp4" type="video/mp4">
+             ·  111111
+              </video>
+             <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(191,1)">
+              <source src="https://videos.8kraw.com/720p/47b59724b65947e2bb56ee0324e43ac0_720p.mp4" type="video/mp4">
+           </video>   
+           <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(192,1)">
+            <source src="https://videos.8kraw.com/720p/83e105af48bf4e96bc762492aac81fce_720p.mp4" type="video/mp4">
+         </video>   
+         <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(193,1)">
+          <source src="https://videos.8kraw.com/720p/977297e336034e4895d0fe20fc9d4872_720p.mp4" type="video/mp4">
+       </video>                 
+            </div>
+         </div>
+    <!-- 以上是8K -->
+    <!-- 以下是城市景 -->
+          <div class="cskj fd">
+      <div class="bt">
+         <br><br>
+         <div class="zuo">
+            <h3>城市空景</h3>
+         </div>
+         <div class="you">
+            <a href="./search.html" onclick="funcskj()">查看更多</a>
+         </div>
+      </div>
+      <div class="photo shou">
+        <br><br>
+        <video  x-webkit-airplay="true" webkit-playsinline="true" loop='loop' muted=""  alt="191" onclick="details(194,1)">
+          <source src="https://videos.8kraw.com/720p/c8be03fb304540b380ab819154dea2f9_720p.mp4" type="video/mp4">
+       </video>
+       <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(195,1)">
+        <source src="https://videos.8kraw.com/720p/c641d07378324a809a42c7cf45b2c771_720p.mp4" type="video/mp4">
+     </video>   
+     <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(196,1)">
+      <source src="https://videos.8kraw.com/720p/bd6d5384d430487da734300ed5c3bb9c_720p.mp4" type="video/mp4">
+   </video>   
+   <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(197,1)">
+    <source src="https://videos.8kraw.com/720p/19d23d9e527c47e7a39827ff1b1d5513_720p.mp4" type="video/mp4">
+ </video>                 
+      </div>
+          </div>
+    <!-- 以上是城市景 -->
+    <!-- 以下是自然风光 -->
+          <div class="zrfg fd">
+      <div class="bt">
+         <br><br>
+         <div class="zuo">
+            <h3>自然风光</h3>
+         </div>
+         <div class="you">
+            <a href="./search.html" onclick="funzrfg()">查看更多</a>
+         </div>
+      </div>
+      <div class="photo shou">
+        <br><br>
+        <video  x-webkit-airplay="true" webkit-playsinline="true" loop='loop' muted=""  alt="191" onclick="details(198,1)">
+          <source src="https://videos.8kraw.com/720p/217c805b7a0346c2bea783c8a48c6ef7_720p.mp4" type="video/mp4">
+       </video>
+       <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(199,1)">
+        <source src="https://videos.8kraw.com/720p/4e9a79e1c2a83743a70ec14fe3560cac_720p.mp4" type="video/mp4">
+     </video>   
+     <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(200,1)">
+      <source src="https://videos.8kraw.com/720p/0f617e362c1ddf4444f0074b78584645_720p.mp4" type="video/mp4">
+   </video>   
+   <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(201,1)">
+    <source src="https://videos.8kraw.com/720p/0967a5e35b334275f01f33ce2feb4bbc_720p.mp4" type="video/mp4">
+ </video>                 
+      </div>
+          </div>
+     <!-- 以上是自然风光 -->
+     <!-- 以下是西藏风景 -->
+          <div class="xzfj fd">
+      <div class="bt">
+         <br><br>
+         <div class="zuo">
+            <h3>西藏风景</h3>
+         </div>
+         <div class="you">
+            <a href="./search.html" onclick="funxzfj()">查看更多</a>
+         </div>
+      </div>
+      <div class="photo shou">
+        <br><br>
+        <video  x-webkit-airplay="true" webkit-playsinline="true" loop='loop' muted=""  alt="191" onclick="details(202,1)">
+          <source src="https://videos.8kraw.com/720p/b6dbd743fbce168417560651b98a509f_720p.mp4" type="video/mp4">
+       </video>
+       <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(203,1)">
+        <source src="https://videos.8kraw.com/720p/348658ecd7bea10f8f5787749eceb941_720p.mp4" type="video/mp4">
+     </video>   
+     <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(204,1)">
+      <source src="https://videos.8kraw.com/720p/a3b0934144b847d2a528c35233b1b7b2_720p.mp4" type="video/mp4">
+   </video>   
+   <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(205,1)">
+    <source src="https://videos.8kraw.com/720p/b0e7b96317904b16848813de0b58667a_720p.mp4" type="video/mp4">
+ </video>                 
+      </div>
+          </div>
+      <!-- 以上是西藏风景 -->
+        <!-- 以下是云南随拍 -->
+          <div class="ynsp fd">
+      <div class="bt">
+         <br><br>
+         <div class="zuo">
+            <h3>云南随拍</h3>
+         </div>
+         <div class="you">
+            <a href="./search.html" onclick="funynsp()">查看更多</a>
+         </div>
+      </div>
+      <div class="photo shou">
+        <br><br>
+        <video  x-webkit-airplay="true" webkit-playsinline="true" loop='loop' muted=""  alt="191" onclick="details(206,1)">
+          <source src="https://videos.8kraw.com/720p/e6724f7d363d441a8903972bcc95336f_720p.mp4" type="video/mp4">
+       </video>
+       <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(207,1)">
+        <source src="https://videos.8kraw.com/720p/a89a8c1c8d1f4d84b6728de3627565ac_720p.mp4" type="video/mp4">
+     </video>   
+     <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(208,1)">
+      <source src="https://videos.8kraw.com/720p/00d076d4e189e5c18a766ad666c12c3f_720p.mp4" type="video/mp4">
+   </video>   
+   <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(209,1)">
+    <source src="https://videos.8kraw.com/720p/e38c9920725144caa1d44ec6e6174b90_720p.mp4" type="video/mp4">
+ </video>                 
+      </div>
+          </div>
+      <!-- 以上是云南随拍 -->
+        <!-- 以下是我的家乡 -->
+          <div class="wdjx fd">
+      <div class="bt">
+         <br><br>
+         <div class="zuo">
+            <h3>我的家乡</h3>
+         </div>
+         <div class="you">
+            <a href="./search.html" onclick="funwdjx()">查看更多</a>
+         </div>
+      </div>
+      <div class="photo shou">
+        <br><br>
+        <video  x-webkit-airplay="true" webkit-playsinline="true" loop='loop' muted=""  alt="191" onclick="details(210,1)">
+          <source src="https://videos.8kraw.com/720p/df8faa3a864a4725a8f16d0e9b973975_720p.mp4" type="video/mp4">
+       </video>
+       <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(211,1)">
+        <source src="https://videos.8kraw.com/720p/2ef4bb34ed93472cbe36f1aa827c5b82_720p.mp4" type="video/mp4">
+     </video>   
+     <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(212,1)">
+      <source src="https://videos.8kraw.com/720p/7a61810cf057414dac7103f29e5ece0b_720p.mp4" type="video/mp4">
+   </video>   
+   <video  x-webkit-airplay="true" webkit-playsinline="true" muted="" alt="191" onclick="details(213,1)">
+    <source src="https://videos.8kraw.com/720p/b715d26b7c8a9e5b43f19323e44d7ad9_720p.mp4" type="video/mp4">
+ </video>                 
+      </div>
+          </div>
+          <br><br>
+      <!-- 以上是我的家乡 -->
+       </div>
+    </div>
+
+    <!-- 以上是内容部分 -->
+    <!-- 以下是版权部分 -->
+    <div class="bq">
+      <!-- 以下是链接部分 -->
+     <div class="weibu">
+       <div class="center">
+        <ul class="clearfix">
+          <li>
+          更多信息
+          <a href="./about.html">关于我们</a>
+          |
+          <a href="./about.html">我们的宗旨</a>
+         </li>
+         <li >
+           常见问题
+         <a href="./problem.html">素材版权</a>
+         |
+         <a href="./problem.html">素材价格与购买方式</a>
+         |
+         <a href="./problem.html">摄影师签约</a>
+       </li>
+ 
+         <li>联系我们
+         <a href="./problem.html">意见与建议</a>
+         |
+          <a href="#">商务合作</a>
+          
+         </li>
+        </ul> 
+       </div>
+       
+       
+     </div>
+    <!-- 以上是链接部分 -->
+     <div class="fenge">
+       <br style="background-color: #191919;" >
+       <hr>
+     </div>
+     <div class="banhao">
+       <h6>©2017-2020 ICP备17045390号-1</h6>
+       <img src="../img/jh.png" alt="">
+       <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902002882">沪公网安备 31010902002882号</a>
+     </div>
+
+    </div>
+    <!-- 以上是版权部分 -->
+     </div>
+   <!-- 以上是整个页面 -->
+   <script src="./js/jquery-3.6.0.min.js"></script>
+   <script>
+      //获取登陆信息
+      function details(imgid,ifvideo){
+        sessionStorage.setItem("ifvideo",`${ifvideo}`)
+        sessionStorage.setItem("imgid",`${imgid}`)
+        console.log(`${imgid}`)
+        location.href="./details.html"
+      }
+      var  userzfc=window.sessionStorage.getItem('user')
+      if(userzfc!=null){
+      var userinfo=userzfc.split(',')
+      console.log(userinfo)
+      var user = document.getElementById('user')
+      coll();
+      if(userinfo[0]==null){
+        user.innerHTML =  `<a href="./login.html" target="_self">登录</a>
+         <a href="#">EN</a>`
+      }else {
+        user.innerHTML = 
+        `<div class="dorp">
+          <a href="./Collection.html" target="_self">我的收藏</a>
+          <div class="dorp_con">
+            <div id="sc">
+             </div> 
+            
+          </div>
+          </div> 
+
+          <div class="dorp">
+            <a href="#">欢迎你,${userinfo[1]}</a>
+          <div class="dorp_con1">
+            <p style="font-size: 15px; color: white;text-align: center;" onclick="user1()">
+               个人中心
+             </p>
+            <p style="font-size: 15px; color: white;text-align: center;" onclick="exit()">
+               退出
+             </p>
+          </div>
+          </div> 
+         `
+      }
+    }
+
+
+   function exit(){
+    sessionStorage.removeItem("user");
+    sessionStorage.removeItem("scid");
+    location.reload();
+   }
+    function  coll(){
+      var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+         if(result.code == 1){
+           console.log(result.data)
+           sc.innerHTML =showlist1(result.data)
+    
+           console.log(result.data);
+           console.log('查询成功')
+         }else {
+          console.log(result.msg)
+         }
+      }
+    }
+}
+xhr.open("GET",`/user/Querycollection?userid=${userinfo[0]}`,true)
+  xhr.send()
+    }
+    function showlist1(arr){
+  var str = '';
+  for(var i=0;i<arr.length&&i<2;i++){
+    if(arr[i].ifvideo==0){
+      str += `
+    <p style="float: left;padding-right:4px ;">
+      <img src="${arr[i].img}" style="width: 60px;height: 45px;padding-bottom:10px;margin-right:10px;">
+    </p>      
+    `
+    }else{
+      str += `
+      <video  x-webkit-airplay="true" webkit-playsinline="true" style="width: 60px;height: 60px;padding-bottom:15px;margin-right:10px;" muted="" alt="191" onclick="details(201,1)">
+      <source src="${arr[i].img}" type="video/mp4">
+   </video>     
+    `
+    }
+  }
+  console.log(str)
+  return str;
+  
+}
+
+     function fun1(e){
+       if(e.keyCode==13){
+        location.href="./search.html"
+       }
+     }
+   function fun(){
+     console.log(sskid.value)
+     sessionStorage.setItem("key",`${sskid.value}`)
+	}
+  function fun2(target){
+     console.log($(target).text())
+     sessionStorage.setItem("key",`${$(target).text()}`)
+	}
+  function fun8K(){
+     //console.log($(target).text())
+     sessionStorage.setItem("key",'旅拍')
+	}
+  function funwdjx(){
+     //console.log($(target).text())
+     sessionStorage.setItem("key",'邹平')
+	}
+  function funynsp(){
+     //console.log($(target).text())
+     sessionStorage.setItem("key",'云南')
+	}
+  function funxzfj(){
+     //console.log($(target).text())
+     sessionStorage.setItem("key",'西藏')
+	}
+  function funzrfg(){
+     //console.log($(target).text())
+     sessionStorage.setItem("key",'风景')
+	}
+  function funcskj(){
+     //console.log($(target).text())
+     sessionStorage.setItem("key",'城市')
+	}
+  function user1(){
+    location.href="./user.html"
+  }
+  $('video').mousemove(function (e) { 
+      $(this).trigger('play');
+      $(this).addClass("shou").siblings().removeClass("shou");
+    });
+
+    $('video').mouseout(function (e) { 
+       $(this).trigger('pause');
+    });
+	
+   </script>
+</body>
+</html>

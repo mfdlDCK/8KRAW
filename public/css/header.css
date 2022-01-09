@@ -1,0 +1,18 @@
+/* 搜索框 */
+.xz-navbar #xzmenu .xz-search {
+  width: 50%;
+  border: 1px solid #0aa1ed;
+  height: 34px;
+}
+.xz-navbar #xzmenu .xz-search input {
+  width: 80%;
+  outline: none;
+  height: 32px;
+  font-size: 12px;
+}
+.xz-navbar .xz-mlist a:hover {
+  text-decoration: none;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "|";
+}

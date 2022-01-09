@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*css和scss都可以使用的注释*/
+body {
+  background-color: violet;
+}
+
+.box {
+  background-color: #ddd;
+}
+.box h1 {
+  font-size: 18px;
+}
+.box ul {
+  list-style: none;
+}
+.box ul li:nth-child(odd) {
+  background-color: red;
+}
+.box ul li:nth-child(even) {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=test.css.map */

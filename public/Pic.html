@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <title>8Kraw</title>
+  <style>
+    body {
+      background-color: white;
+    }
+
+    * {
+      padding: 0px;
+      margin: 0;
+    }
+
+    .dh {
+      width: 100%;
+      height: 50px;
+      margin: auto;
+      background-color:rgba(0, 0, 0, 0.8)
+      
+    }
+
+    .center {
+      width: 1170px;
+      margin: auto;
+    }
+
+    .dh div {
+      float: left;
+    }
+
+    .dh div a {
+      width: 100px;
+      height: 100%;
+
+    }
+
+    .dh div a:hover {
+      background-color: #222;
+    }
+
+    .dh .logo img {
+      width: 150px;
+      height: 50px;
+    }
+
+    .dh .logo {
+      margin-right: 20px;
+      display: inline-block;
+    }
+
+    .dh a {
+      display: inline-block;
+      width: 120px;
+      height: 30px;
+      color: #fff;
+      font-size: 14px; 
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .dh .dhyou {
+      float: right;
+      margin-right: 15px;
+    }
+
+    .dh .dhyou,.dhzuo {
+      height: 50px;
+      line-height: 50px;
+    }
+
+     
+
+    .weibu li a,
+    .banhao a {
+      color: rgb(104, 103, 103);
+    }
+
+    .weibu li a,
+    .banhao a {
+      color: rgb(104, 103, 103);
+    }
+
+    .weibu li a,
+    .banhao a {
+      color: rgb(104, 103, 103);
+    }
+
+    .weibu li a,
+    .banhao a {
+      color: rgb(104, 103, 103);
+    }
+
+    .bq {
+      width: 100%;
+      height: 200px;
+      margin: auto;
+      background-color: #191919;
+      position: relative
+    }
+
+    .bq .weibu {
+      /* width: 1170px; */
+
+      margin: auto;
+      padding-top: 30px;
+
+    }
+
+    .weibu li {
+     float: left;
+       padding-left: 50px;
+      list-style: none;
+      color: #999999;
+      margin: 0 32px;
+      font-size: 15px;
+    }
+
+    .weibu li a,
+    .banhao a {
+      text-decoration: none
+    }
+
+    .fenge {
+      width: 61%;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .banhao {
+      /* width: 1170px; */
+      margin: auto;
+      padding-top: 30px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -130px;
+      margin-top: -20px;
+
+      color: #666666;
+    }
+
+    .banhao h5 {
+      margin-bottom: 15px;
+    }
+
+    .lbt {
+      width: 100%;
+      height: 350px;
+      position: relative
+    }
+
+    .ssklogo {
+      background-image: url(./img/ss.png);
+      /*设置小图标*/
+
+      background-size: 25px 25px;
+      /*小图标的大小*/
+
+      background-position: 13px 11px;
+      /*小图标在input的位置*/
+
+      background-repeat: no-repeat;
+      /*背景小图标不重复*/
+
+      padding: 8px 10px 8px 40px;
+      /*设置input内边距*/
+
+      /*设置input样式好看*/
+      width: 850px;
+      height: 50px;
+      background-color: white;
+      border:1px solid #999999;
+      border-radius: 10px;
+      margin-top: 30px;
+      text-indent: 20px
+    }
+
+    .lbt img {
+      width: 100%;
+      height: 400px;
+      /* display: block; */
+      
+    }
+    .lbt .carousel {
+      font-size: 0;
+    }
+    .lbt2 img {
+      width: 1170px;
+      height:181px;
+      /* display: block; */
+    }
+    
+    .neirong .s-lbt img {
+      width: 386px;
+      height:219px;
+      /* display: block; */
+    }
+    .neirong .x-lbt img {
+      width: 288.5px;
+      height:154px;
+      /* display: block; */
+    }
+    .neirong .s-lbt table{
+      width: 1170px;
+      height: 450px;
+      color: white;
+    }
+    .neirong .x-lbt table{
+      width: 1170px;
+      height: 480px;
+      color: white;
+    }
+    .neirong .wz{
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+    .carousel {
+      position: relative;
+    }
+    .carousel p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 1000;
+      font-size: 22px;
+    }
+    .neirong .wz h4{
+      font-size: 12px;
+      color: #333333;
+    }
+    .neirong .wz h1{
+      font-size: 31px;
+    }
+    .hot a{
+      
+      text-decoration:none
+    }
+    .hot  a:link{
+       color:#cccccc;
+     }
+     .hot  a:visited{
+       color:#cccccc;
+     }
+    .hot  a:hover {
+       color:#cccccc;
+       
+     }
+     .hot  a:active{
+       color:#cccccc;
+     }
+     .dorp{
+   position: relative;
+  display: inline-block;
+    }
+
+.dorp_con{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp_con #sc {
+  display: flex;
+}
+.dorp_con1{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp:hover .dorp_con{display:block;}
+.dorp:hover .dorp_con1{display:block;}
+  </style>
+</head>
+
+<body>
+  <!-- 以下是整个页面 -->
+  <div class="zong" style="min-width: 1170px;">
+    <!-- 以下是整个导航 -->
+    <div class="dh fixed-top" style="min-width: 900px;">
+      <div class="logo">
+        <img src="./img/logo.png" alt=""></div>
+      <div class="dhzuo">
+        <a href="./index.html">视频</a>
+        <a href="./Pic.html">图片</a>
+        <a href="./problem.html">常见问题</a>
+        <a href="./about.html">关于我们</a>
+      </div>
+      <div class="dhyou" id="user">
+        <a href="./login.html" target="_self">登录</a>
+         <a href="#">EN</a>
+      </div>
+    </div>
+    <!-- 以上是整个导航 -->
+    <!-- 以下是轮播图部分 -->
+    <div>
+      <div class="lbt">
+        <!-- <div class="container"> -->
+        <!-- 最外层 -->
+        <div class="carousel slide" id="banner" data-ride="carousel">
+          <!-- 1.图片部分展示图 -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/bannerlbt1.jpg" alt="" class="d-block">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/bannerlbt2.png" alt="" class="d-block">
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+
+      </div>
+    </div>
+<br><br>
+    <!-- 以上是轮播图部分 -->
+    <!-- 以下是搜索框部分 -->
+    <div class="ssk text-center">
+      <div class="center">
+        <!-- 搜索框 -->
+        <!-- <div class="inputbox"> -->
+          <input type="text" onkeydown="fun1(event)" placeholder="查找创意照片" autocomplete="off" class="ssklogo"  id="sskid" oninput="fun()">
+        <!-- </div> -->
+        <!-- 热搜 -->
+        <div class="hot" style="font-size: 14px; color: #cccccc; padding-top: 5px;">
+          当前热搜：
+          <span ><a href="./search.html" onclick="fun2(this)">全景</a></span>
+          <span ><a href="./search.html" onclick="fun2(this)">凌波门</a></span>
+          <span ><a href="./search.html" onclick="fun2(this)">现代</a></span>
+          <span ><a href="./search.html" onclick="fun2(this)">无人机</a></span>
+          <span ><a href="./search.html" onclick="fun2(this)">高空</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 以上是搜索框部分 -->
+    <!-- 以上下是轮播图 -->
+    <div class="lbt2" style="padding: 80px 0px 50px;">
+      <div class="center">
+        <div class="carousel slide" id="banner" data-ride="carousel">
+          <!-- 1.图片部分展示图 -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="https://www.bilibili.com/video/BV1Tv4y1Z7So" target="_blank">
+                <img src="./img/lbt1.png" alt="" class="d-block" >
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.bilibili.com/video/BV1cz4y127ct?" target="_blank">
+                <img src="./img/lbt2.png" alt="" class="d-block" >  
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="https://www.bilibili.com/video/BV1cX4y1u76S/" target="_blank">
+                <img src="./img/lbt3.jpg" alt="" class="d-block"> 
+              </a>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+     
+    </div>
+
+    <!-- 以上是轮播图 -->
+    <!-- 以下是内容部分 -->
+    <div class="neirong text-center" style="padding-top: 95px;">
+      <div class="center">
+        <div class="wz">
+          <h1><b>8KRAW推荐</b></h1>
+          <h4>百位摄影师作品呈现，带你领略盛世中华。</h4>
+        </div>
+        <div class="s-lbt">
+           <table border="0">
+             <tr>
+               <td>
+                <div class="carousel slide" id="banner" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <p>航拍武汉</p>
+                    <div class="carousel-item active">
+                      <a href="./search.html">
+                      <img src="http://mfdl.i234.me:9090/%E8%88%AA%E6%8B%8D%E6%AD%A6%E6%B1%89/1.jpg" alt="" class="d-block" onclick="cs1()">
+                    </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E8%88%AA%E6%8B%8D%E6%AD%A6%E6%B1%89/2.jpg" alt="" class="d-block" onclick="cs1()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E8%88%AA%E6%8B%8D%E6%AD%A6%E6%B1%89/3.jpg" alt="" class="d-block" onclick="cs1()">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               </td>
+               <td>
+                <div class="carousel slide" id="banner" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <p>武汉CBD</p>
+                    <div class="carousel-item active">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89CBD%E5%85%A8%E6%99%AF/1.jpg" alt="" class="d-block" onclick="cs2()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89CBD%E5%85%A8%E6%99%AF/2.jpg" alt="" class="d-block" onclick="cs2()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89CBD%E5%85%A8%E6%99%AF/3.jpg" alt="" class="d-block" onclick="cs2()">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               </td>
+               <td>
+                <div class="carousel slide" id="banner" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <p>武汉凌波门</p>
+                    <div class="carousel-item active">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89%E5%87%8C%E6%B3%A2%E9%97%A8/1.jpg" alt="" class="d-block" onclick="cs3()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89%E5%87%8C%E6%B3%A2%E9%97%A8/2.jpg" alt="" class="d-block" onclick="cs3()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89%E5%87%8C%E6%B3%A2%E9%97%A8/3.jpg" alt="" class="d-block" onclick="cs3()">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               </td>
+             </tr>
+             <tr>
+               <td>
+                <div class="carousel slide" id="banner" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <p>长江大桥</p>
+                    <div class="carousel-item active">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5/1.jpg" alt="" class="d-block" onclick="cs4()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5/2.jpg" alt="" class="d-block" onclick="cs4()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89%E9%95%BF%E6%B1%9F%E5%A4%A7%E6%A1%A5/3.jpg" alt="" class="d-block" onclick="cs4()">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               </td>
+               <td>
+                <div class="carousel slide" id="banner" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <p>全景武汉</p>
+                    <div class="carousel-item active">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E5%85%A8%E6%99%AF%E6%AD%A6%E6%B1%89/3.jpg" alt="" class="d-block" onclick="cs5()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E5%85%A8%E6%99%AF%E6%AD%A6%E6%B1%89/4.jpg" alt="" class="d-block" onclick="cs5()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E5%85%A8%E6%99%AF%E6%AD%A6%E6%B1%89/5.jpg" alt="" class="d-block" onclick="cs5()">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               </td>
+               <td>
+                <div class="carousel slide" id="banner" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <p>全景西藏</p>
+                    <div class="carousel-item active">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E5%85%A8%E6%99%AF%E6%8B%89%E8%90%A8/1.jpg" alt="" class="d-block" onclick="cs6()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E5%85%A8%E6%99%AF%E6%8B%89%E8%90%A8/2.jpg" alt="" class="d-block" onclick="cs6()">
+                      </a>
+                    </div>
+                    <div class="carousel-item">
+                      <a href="./search.html">
+                        <img src="http://mfdl.i234.me:9090/%E5%85%A8%E6%99%AF%E6%8B%89%E8%90%A8/3.jpg" alt="" class="d-block" onclick="cs6()">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+               </td>
+             </tr>
+            
+           </table>
+        </div>
+        <div class="wz">
+          <h1><b>精选好图</b></h1>
+        </div>
+        <div class="x-lbt" style="padding-bottom: 50px;">
+          <table border="0">
+            <tr>
+              <td>
+               <div class="carousel slide" id="banner" data-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <img src="http://mfdl.i234.me:9090/%E9%BB%84%E9%B9%A4%E6%A5%BC/1.jpg" alt="188" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E9%BB%84%E9%B9%A4%E6%A5%BC/3.jpg" alt="189" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E6%A2%81%E5%AD%90%E6%B9%96%E6%98%9F%E7%A9%BA/1.jpg" alt="57" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                 </div>
+               </div>
+              </td>
+              <td>
+               <div class="carousel slide" id="banner" data-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <img src="http://mfdl.i234.me:9090/%E6%97%A5%E7%B3%BB%E6%AD%A6%E6%B1%89/2.jpg" alt="1" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E4%BA%91%E5%8D%97/14.jpg" alt="117" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E4%BA%91%E5%8D%97/3.jpg" alt="120" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                 </div>
+               </div>
+              </td>
+              <td>
+               <div class="carousel slide" id="banner" data-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <img src="http://mfdl.i234.me:9090/%E9%82%B9%E5%B9%B3%E6%98%9F%E7%A9%BA/1.jpg" alt="64" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E9%82%B9%E5%B9%B3%E6%98%9F%E7%A9%BA/2.jpg" alt="66" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E9%82%B9%E5%B9%B3%E6%98%9F%E7%A9%BA/4.jpg" alt="68" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                 </div>
+               </div>
+              </td>
+              <td>
+                <div class="carousel slide" id="banner" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="http://mfdl.i234.me:9090/%E9%82%B9%E5%B9%B3%E6%98%9F%E7%A9%BA/5.jpg" alt="69" class="d-block" onclick="details(this.alt,0)">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://mfdl.i234.me:9090/%E9%82%B9%E5%B9%B3%E6%98%9F%E7%A9%BA/7.jpg" alt="66" class="d-block" onclick="details(this.alt,0)">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://mfdl.i234.me:9090/%E6%88%91%E4%BB%AC%E6%9C%80%E5%A5%BD%E7%9A%84%E5%B9%B4%E5%8D%8E/8.jpg" alt="165" class="d-block" onclick="details(this.alt,0)">
+                    </div>
+                  </div>
+                </div>
+               </td>
+            </tr>
+            <tr>
+              <td>
+               <div class="carousel slide" id="banner" data-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89%E9%9A%8F%E6%8B%8D/5.jpg" alt="10" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89%E9%9A%8F%E6%8B%8D/6.jpg" alt="11" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E6%AD%A6%E6%B1%89%E9%9A%8F%E6%8B%8D/10.jpg" alt="14" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                 </div>
+               </div>
+              </td>
+              <td>
+               <div class="carousel slide" id="banner" data-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <img src="http://mfdl.i234.me:9090/%E5%85%A8%E6%99%AF%E6%8B%89%E8%90%A8/1.jpg" alt="97" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E5%85%A8%E6%99%AF%E6%8B%89%E8%90%A8/2.jpg" alt="98" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E5%85%A8%E6%99%AF%E6%8B%89%E8%90%A8/3.jpg" alt="99" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                 </div>
+               </div>
+              </td>
+              <td>
+               <div class="carousel slide" id="banner" data-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <img src="http://mfdl.i234.me:9090/%E5%9D%90%E7%9D%80%E7%81%AB%E8%BD%A6%E5%8E%BB%E8%A5%BF%E8%97%8F/1.jpg" alt="101" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E5%9D%90%E7%9D%80%E7%81%AB%E8%BD%A6%E5%8E%BB%E8%A5%BF%E8%97%8F/2.jpg" alt="102" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E5%9D%90%E7%9D%80%E7%81%AB%E8%BD%A6%E5%8E%BB%E8%A5%BF%E8%97%8F/3.jpg" alt="103" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                 </div>
+               </div>
+              </td>
+              <td>
+                <div class="carousel slide" id="banner" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="http://mfdl.i234.me:9090/%E5%9D%90%E7%9D%80%E7%81%AB%E8%BD%A6%E5%8E%BB%E8%A5%BF%E8%97%8F/4.jpg" alt="104" class="d-block" onclick="details(this.alt,0)">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://mfdl.i234.me:9090/%E5%9D%90%E7%9D%80%E7%81%AB%E8%BD%A6%E5%8E%BB%E8%A5%BF%E8%97%8F/5.jpg" alt="105" class="d-block" onclick="details(this.alt,0)">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://mfdl.i234.me:9090/%E5%9D%90%E7%9D%80%E7%81%AB%E8%BD%A6%E5%8E%BB%E8%A5%BF%E8%97%8F/6.jpg" alt="106" class="d-block" onclick="details(this.alt,0)">
+                    </div>
+                  </div>
+                </div>
+               </td>
+            </tr>
+            <tr>
+              <td>
+               <div class="carousel slide" id="banner" data-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <img src="http://mfdl.i234.me:9090/%E4%BA%91%E5%8D%97/5.jpg" alt="122" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E4%BA%91%E5%8D%97/8.jpg" alt="125" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E4%BA%91%E5%8D%97/10.jpg" alt="127" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                 </div>
+               </div>
+              </td>
+              <td>
+               <div class="carousel slide" id="banner" data-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <img src="http://mfdl.i234.me:9090/%E6%88%91%E4%BB%AC%E6%9C%80%E5%A5%BD%E7%9A%84%E5%B9%B4%E5%8D%8E/1.jpg" alt="158" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E6%88%91%E4%BB%AC%E6%9C%80%E5%A5%BD%E7%9A%84%E5%B9%B4%E5%8D%8E/2.jpg" alt="159" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E6%88%91%E4%BB%AC%E6%9C%80%E5%A5%BD%E7%9A%84%E5%B9%B4%E5%8D%8E/3.jpg" alt="160" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                 </div>
+               </div>
+              </td>
+              <td>
+               <div class="carousel slide" id="banner" data-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <img src="http://mfdl.i234.me:9090/%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/1.jpg" alt="83" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/2.jpg" alt="84" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                   <div class="carousel-item">
+                     <img src="http://mfdl.i234.me:9090/%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/3.jpg" alt="85" class="d-block" onclick="details(this.alt,0)">
+                   </div>
+                 </div>
+               </div>
+              </td>
+              <td>
+                <div class="carousel slide" id="banner" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="http://mfdl.i234.me:9090/%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/4.jpg" alt="86" class="d-block" onclick="details(this.alt,0)">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://mfdl.i234.me:9090/%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/5.jpg" alt="87" class="d-block" onclick="details(this.alt,0)">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="http://mfdl.i234.me:9090/%E6%88%91%E7%9A%84%E5%AE%B6%E4%B9%A1/6.jpg" alt="88" class="d-block" onclick="details(this.alt,0)">
+                    </div>
+                  </div>
+                </div>
+               </td>
+            </tr>
+           
+          </table>
+       </div>
+      </div>
+    </div>
+    <!-- 以上是内容部分 -->
+    <!-- 以下是版权部分 -->
+    <div class="bq">
+      <!-- 以下是链接部分 -->
+      <div class="weibu">
+        <div class="center">
+          <ul class="clearfix">
+            <li>
+            更多信息
+            <a href="./about.html">关于我们</a>
+            |
+            <a href="./about.html">我们的宗旨</a>
+           </li>
+           <li >
+             常见问题
+           <a href="./problem.html">素材版权</a>
+           |
+           <a href="./problem.html">素材价格与购买方式</a>
+           |
+           <a href="./problem.html">摄影师签约</a>
+         </li>
+   
+           <li>联系我们
+           <a href="./problem.html">意见与建议</a>
+           |
+            <a href="#">商务合作</a>
+           </li>
+          </ul> 
+        </div>
+
+      </div>
+      <!-- 以上是链接部分 -->
+      <div class="fenge">
+        <br style="background-color: #191919;">
+        <hr>
+      </div>
+      <div class="banhao">
+        <h6>©2017-2020 ICP备17045390号-1</h6>
+        <img src="./img/jh.png" alt="">
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902002882">沪公网安备 31010902002882号</a>
+      </div>
+
+    </div>
+    <!-- 以上是版权部分 -->
+  </div>
+  <!-- 以上是整个页面 -->
+  <script>
+    //获取登陆信息
+    var  userzfc=window.sessionStorage.getItem('user')
+    if(userzfc!=null){
+      var userinfo=userzfc.split(',')
+      console.log(userinfo)
+      var user = document.getElementById('user')
+      coll()
+      if(userinfo[0]==null){
+        user.innerHTML =  `<a href="./login.html" target="_self">登录</a>
+         <a href="#">EN</a>`
+      }else {
+        user.innerHTML = 
+        `<div class="dorp">
+          <a href="./Collection.html" target="_self">我的收藏</a>
+          <div class="dorp_con">
+            <div id="sc">
+             </div> 
+            
+          </div>
+          </div> 
+
+          <div class="dorp">
+            <a href="#">欢迎你,${userinfo[1]}</a>
+          <div class="dorp_con1">
+            <p style="font-size: 15px; color: white;text-align: center;" onclick="user1()">
+               个人中心
+             </p>
+            <p style="font-size: 15px; color: white;text-align: center;" onclick="exit()">
+               退出
+             </p>
+          </div>
+          </div> 
+         `
+      }
+    }
+   
+    function details(imgid,ifvideo){
+        sessionStorage.setItem("imgid",`${imgid}`)
+        sessionStorage.setItem("ifvideo",`${ifvideo}`)
+        //console.log(ifvideo,imgid)
+
+      location.href="./details.html"
+      }
+      function user1(){
+    location.href="./user.html"
+  }
+   function exit(){
+    sessionStorage.removeItem("user");
+    sessionStorage.removeItem("scid");
+    location.reload();
+   }
+   function  coll(){
+      var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+         if(result.code == 1){
+           console.log(result.data)
+           sc.innerHTML = showlist1(result.data)
+           console.log('查询成功')
+         }else {
+          console.log(result.msg)
+         }
+      }
+    }
+}
+xhr.open("GET",`/user/Querycollection?userid=${userinfo[0]}`,true)
+  xhr.send()
+    }
+    function showlist1(arr){
+      console.log(111)
+  var str = '';
+  for(var i=0;i<arr.length&&i<2;i++){
+    if(arr[i].ifvideo==0){
+      str += `
+    <p style="float: left;padding-right:4px ;">
+      <img src="${arr[i].img}" style="width: 60px;height: 45px;padding-bottom:10px;margin-right:10px;">
+    </p>      
+    `
+    }else{
+      str += `
+      <video  x-webkit-airplay="true" webkit-playsinline="true" style="width: 60px;height: 60px;padding-bottom:15px;margin-right:10px;" muted="" alt="191" onclick="details(201,1)">
+      <source src="${arr[i].img}" type="video/mp4">
+   </video>     
+    `
+    }
+  }
+  
+  return str;
+}
+    function fun1(e){
+      if(e.keyCode==13){
+       location.href="./search.html"
+      }
+    }
+  function fun(){
+    console.log(sskid.value)
+    sessionStorage.setItem("key",`${sskid.value}`)
+ }
+ function fun2(target){
+     console.log($(target).text())
+     sessionStorage.setItem("key",`${$(target).text()}`)
+	}
+  function cs1(){
+    sessionStorage.setItem("key",'航拍')
+  }
+  function cs2(){
+    sessionStorage.setItem("key",'CBD')
+  }
+  function cs3(){
+    sessionStorage.setItem("key",'东湖')
+  }
+  function cs4(){
+    sessionStorage.setItem("key",'长江大桥')
+  }
+  function cs5(){
+    sessionStorage.setItem("key",'全景武汉')
+  }
+  function cs6(){
+    sessionStorage.setItem("key",'全景西藏')
+  }
+ 
+  </script>
+</body>
+
+</html>

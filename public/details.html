@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <link rel="stylesheet" type="text/css" href="https://blog.huangwx.cn/css/sweetalert.css">
+<script type="text/javascript" src="https://blog.huangwx.cn/js/sweetalert-dev.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <title>8Kraw</title>
+  <style>
+   body{
+     background-color: rgb(8, 8, 8);
+      
+   }
+    *{
+      padding: 0px;
+      margin: 0;
+    }
+    
+    .dh{
+      width: 100%;
+      height: 50px;
+      margin: auto; 
+      
+      background-color:rgba(0, 0, 0, 0.8)
+      
+    }
+    .center {
+      width: 1170px;
+      margin: auto;
+    }
+    .dh div{
+      float: left;
+    }
+    .dh div a{
+      width: 100px;
+      height: 100%;
+
+    }
+    .dh div a:hover {background-color: #222;}
+    .dh .logo img{
+      width: 150px;
+      height: 50px;
+    }
+    .dh .logo{
+      margin-right: 20px;
+      display: inline-block;
+    }
+    .dh a{
+      display: inline-block;
+      width: 120px;
+      height: 30px;
+      color:#fff;
+      font-size: 14px;
+      text-align: center;
+      text-decoration:none
+    }
+    .dh .dhyou{
+      float: right;
+      margin-right: 15px;
+    }
+
+    .dh .dhyou,.dhzuo{
+      height: 50px;
+      line-height: 50px;
+    }
+    .neirong  .you a{
+      margin-right: 5px;
+      font-size: 14px;
+      text-decoration:none
+    }
+    .neirong table {
+      width: 100%;
+    }
+    .neirong  a:link, .weibu li a,.banhao a {
+       color:rgb(104, 103, 103);
+     }
+    .neirong  a:visited,.weibu li a,.banhao a {
+       color:rgb(104, 103, 103);
+     }
+    .neirong  a:hover,.weibu li a,.banhao a {
+       color:rgb(104, 103, 103);
+     }
+    .neirong  a:active ,.weibu li a,.banhao a{
+       color:rgb(104, 103, 103);
+     }
+    .neirong .photo img{
+       width: 282.5px;
+       height: 154px;
+       margin: 3px;
+    }
+    .bq{
+      width: 100%;
+      height: 200px;
+      margin: auto;
+      background-color: #191919;
+      position: relative
+    }
+    .bq .weibu{
+      /* width: 1170px; */
+     
+      margin: auto;
+      padding-top: 30px;
+      
+    }
+    .weibu li{
+     float: left;
+       padding-left: 50px;
+      list-style: none;
+      color: #999999;
+      margin: 0 px;
+      font-size: 15px;
+    }
+    .weibu li a,.banhao a{
+      text-decoration:none
+    }
+    .fenge{
+      width: 61%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    .banhao{
+      /* width: 1170px; */
+      margin: auto;
+      padding-top: 30px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -130px;
+      margin-top: -20px;
+      
+      color: #666666;
+    }
+    .banhao h5{
+      margin-bottom: 15px;
+    }
+   .ssklogo{
+background-image: url(./img/ss.png);/*设置小图标*/
+
+background-size: 15px 15px;/*小图标的大小*/
+
+background-position: 200px 7px;/*小图标在input的位置*/
+
+background-repeat: no-repeat;/*背景小图标不重复*/
+
+padding: 8px 10px 8px 40px;/*设置input内边距*/
+font-size:15px;
+/*设置input样式好看*/
+      width: 228px;
+      height: 30px;
+      background-color: #222222;
+      border:1px solid #222222;
+      border-radius: 15px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      text-indent:1px
+      
+}
+
+     .dorp{
+   position: relative;
+  display: inline-block;
+    }
+
+.dorp_con{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp_con1{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp:hover .dorp_con{display:block;}
+.dorp:hover .dorp_con1{display:block;}
+.neirong .sbj img{
+  width: 100%;
+  /* height: 765px; */
+  padding:20px;
+}
+.neirong .sbj video{
+  width: 100%;
+  /* width: 1330px;
+  height: 765px;
+  padding:20px; */
+}
+.neirong .nyou{
+  /* width: 200px;
+  height: 600px; */
+  padding-left: 50px;
+  
+}
+.neirong .x-lbt img {
+       width: 370px;
+      height:219px;
+      /* width: 50%;
+      height: 70%; */
+      padding-bottom: 20px;
+      padding-right: 5px;
+      display: block;
+      float: left;
+    }
+    .neirong .x-lbt video {
+      width: 370px;
+      height:219px;
+      /* width: 50%;
+      height: 70%; */
+      padding-bottom: 20px;
+      padding-right: 5px;
+      display: inline-block;
+    }
+    .neirong .x-lbt a{
+      width: 365px;
+      height: 199px;
+      display:inline-block;
+      box-sizing: border-box;
+    }
+    .neirong .x-lbt table{
+      width: 1170px;
+      height: 480px;
+      color: white;
+    }
+    .neirong .xssc{
+      width: 1570px;
+      height: 480px;
+      color: white;
+    }
+    .neirong .xssc img{
+      width: 370px;
+      height:219px;
+      /* width: 50%;
+      height: 70%; */
+      padding-bottom: 20px;
+      padding-right: 5px;
+      /* display: block; */
+    }
+    .neirong .xbtn{
+      border-radius: 15px;
+      width: 130px;
+      height: 29px;
+      background-color: rgb(23,23,23);
+      border:none;
+      color: #999999;
+      border: 1px solid rgb(153,153,153);
+      margin-right: 15px;
+     margin-bottom: 10px;
+    }
+    .neirong .dbtn{
+      border-radius: 5px;
+      width: 160px;
+      height: 34px;
+      background-color: rgb(37,37,37);
+      font-size: 20px;
+      border:none;
+      color: #999999;
+      border: 1px solid rgb(153,153,153);
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+    .anniuzuo{
+      transform: translate(50%,330%);
+      /* margin-top: 300px;
+      margin-left: 30px; */
+    }
+    .anniuyou{
+      transform: translate(30%,300%);
+      margin-left: 120vh;
+    }
+  .img{
+    padding-right: 80px;
+  }
+  .neirong #img {
+    position: relative;
+  }
+  .neirong #img .anniuyou {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .neirong #img .anniuzuo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .dorp_con #sc {
+  display: flex;
+}
+  </style>
+</head>
+<body>
+  
+  <!-- 以下是整个页面 -->
+   <div class="zong" style="min-width: 1170px;">
+     <!-- 以下是整个导航 -->
+     <div class="dh fixed-top" style="min-width: 1100px;"> 
+      <div class="logo"><img src="./img/logo.png" alt=""></div>
+      <div class="dhzuo">
+         <a href="./index.html">视频</a>
+         <a href="./Pic.html">图片</a>
+         <a href="./problem.html">常见问题</a>
+         <a href="./about.html">关于我们</a>
+         <input type="text" onkeydown="fun1(event)" placeholder="搜索素材" autocomplete="off" class="ssklogo" id="sskid" oninput="fun()">
+      </div>
+      <div class="dhyou" id="user" style="margin-right: 50px;">
+         <a href="./login.html" target="_self">登录</a>
+         <a href="#">EN</a>
+         
+      </div>
+     </div>
+    <!-- 以上是整个导航 -->
+    
+    <!-- 以下是内容部分 -->
+    <div class="neirong" style="padding-top: 50px;" >
+           <div class="sbj" style="background-color: #222222;">
+            <table  border="0" >
+              <tr>
+                <td id='img1'>
+                  <div id='img'>
+                    
+                  </div>
+                
+                </td>
+                <td  class="nyou" valign="top">
+                  <div id="guanbi">
+                    <img src="./img/guanbi.png"style="width: 75px;height: 75px;margin-left: 250px;"onclick="fanhui()">
+                  </div>
+                  <div id="mz">
+                
+                  </div>
+                  <h3 style="padding-top: 150px;color:#999999;font-size: 20px;padding-bottom: 10px;">关键词</h3>
+                  <div id="bq">
+                   
+                    
+                  </div>
+                  <br>
+                  <div style="padding-top: 190px;" id="xz">
+                   
+                  </div>                
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="xnr" style="padding:75px 20px 50px 20px;color: #242529;">
+            <h3 style="font-size: 24px;color: rgb(153,153,153);padding-bottom: 5px;">相似素材</h3>
+            <div class="x-lbt" style="padding-bottom: 50px;">
+              <div id="xssc1"  style="min-width: 1150px;" class="clearfix">
+              </div>
+           </div>
+    </div>
+
+    <!-- 以上是内容部分 -->
+    <!-- 以下是版权部分 -->
+    <div class="bq">
+      <!-- 以下是链接部分 -->
+     <div class="weibu">
+       <div class="center">
+        <ul class="clearfix">
+          <li>
+          更多信息
+          <a href="./about.html">关于我们</a>
+          |
+          <a href="./about.html">我们的宗旨</a>
+         </li>
+         <li >
+           常见问题
+         <a href="./problem.html">素材版权</a>
+         |
+         <a href="./problem.html">素材价格与购买方式</a>
+         |
+         <a href="./problem.html">摄影师签约</a>
+       </li>
+ 
+         <li>联系我们
+         <a href="./problem.html">意见与建议</a>
+         |
+          <a href="#">商务合作</a>
+         </li>
+        </ul> 
+       </div>
+       
+       
+     </div>
+    <!-- 以上是链接部分 -->
+     <div class="fenge">
+       <br style="background-color: #191919;" >
+       <hr>
+     </div>
+     <div class="banhao">
+       <h6>©2017-2020 ICP备17045390号-1</h6>
+       <img src="../img/jh.png" alt="">
+       <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902002882">沪公网安备 31010902002882号</a>
+     </div>
+
+    </div>
+    <!-- 以上是版权部分 -->
+     </div>
+     </div>
+   <!-- 以上是整个页面 -->
+   <script src="./js/jquery-3.6.0.min.js"></script>
+
+   <script>
+   
+    
+ //获取登陆信息
+ var  userzfc=window.sessionStorage.getItem('user')
+ if(userzfc!=null){
+      var userinfo=userzfc.split(',')
+      console.log(userinfo)
+      var user = document.getElementById('user')
+      datails();
+      coll();
+      if(userinfo[0]==null){
+        user.innerHTML =  `<a href="./login.html" target="_self">登录</a>
+         <a href="#">EN</a>`
+      }else {
+        user.innerHTML = 
+        `<div class="dorp">
+          <a href="./Collection.html" target="_self">我的收藏</a>
+          <div class="dorp_con">
+            <div id="sc">
+             </div> 
+            
+          </div>
+          </div> 
+
+          <div class="dorp">
+            <a href="#">欢迎你,${userinfo[1]}</a>
+          <div class="dorp_con1">
+            <p style="font-size: 15px; color: white;text-align: center;" onclick="user1()">
+               个人中心
+             </p>
+            <p style="font-size: 15px; color: white;text-align: center;" onclick="exit()">
+               退出
+             </p>
+          </div>
+          </div> 
+         `
+      }
+    }else {
+      sessionStorage.setItem("scid",[,])
+      datails();
+}
+     var  imgid=window.sessionStorage.getItem('imgid')
+     var  ifvideo=window.sessionStorage.getItem('ifvideo')
+    
+     console.log(ifvideo)
+     console.log(imgid)
+     function user1(){
+    location.href="./user.html"
+  }
+     //查询图片详情
+    function datails(){
+      var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText) 
+         if(result.code == 1){
+           console.log(result.data[0].ifvideo)
+          
+           ifvideo=`${result.data[0].ifvideo}`
+           if(ifvideo==0){   
+             img.innerHTML=` 
+             <img src="./img/you.png" alt="" style="width: 100px;height: 100px;z-index: 10;" class='anniuyou' onclick="details_you()">
+             <img src="./img/zuo.png" alt="" style="width: 100px;height: 100px;z-index: 10;" class='anniuzuo' onclick="details_zuo()">
+             <img src="${result.data[0].images}" alt="" style="z-index: 1;position:relative">`
+             if(`${result.data[0].names}`=='None'){
+              mz.innerHTML=`  
+             <h1 style="color:#999999;font-size: 40px;"><b>${result.data[0].label}</b></h1> 
+             `
+             }else {
+              mz.innerHTML=`  
+             <h1 style="color:#999999;font-size: 40px;"><b>${result.data[0].names}</b></h1> 
+             `
+             }
+             
+           }else if(ifvideo==1){
+            img.innerHTML=` 
+             <img src="./img/you.png" alt="" style="width: 100px;height: 100px;z-index: 10;position:absolute;" class='anniuyou' onclick="details_you()">
+             <img src="./img/zuo.png" alt="" style="width: 100px;height: 100px;z-index: 10;position:absolute;" class='anniuzuo' onclick="details_zuo()">
+            
+             <video autoplay="autoplay" x-webkit-airplay="true" webkit-playsinline="true" loop='loop' muted="" style="z-index: 1;position:relative" >
+                <source src="${result.data[0].images}" type="video/mp4">
+             </video>
+             
+             `
+             
+             mz.innerHTML=`  
+             <h1 style="color:#999999;font-size: 40px;"><b>${result.data[0].names}</b></h1> 
+             `
+           }
+           var arr=result.data[0].label.split('，')
+           bq.innerHTML=xh(arr)
+           xssc(result.data[0].names,result.data[0].label)
+           var  scid=window.sessionStorage.getItem('scid')
+             var scidinfo=scid.split(',')
+              console.log(scidinfo)
+               if(scidinfo.indexOf(`${imgid}`)!==-1){
+            xz.innerHTML=`
+           <button class="dbtn" name='${result.data[0].images}' onclick="xiazai(this.name)">下载小样</button>
+           <button class="dbtn" id="${result.data[0].lid}"name='${result.data[0].images}' onclick="quxiao(this.id)">取消收藏</button>
+           `
+            }else {
+             xz.innerHTML=`
+           <button class="dbtn" name='${result.data[0].images}' onclick="xiazai(this.name)">下载小样</button>
+           <button class="dbtn" id="${result.data[0].lid}"name='${result.data[0].images}' onclick="coll1(this.id,this.name,ifvideo)">加入收藏</button>
+           `
+             }
+          }else {
+            console.log(result.msg)
+          //details_you()
+          }
+         
+          // if(result.data[0].label){
+          //   console.log('ces')
+          // }
+        }
+    }
+}
+xhr.open("GET",`/user/details?lid=${imgid}`,true)
+  xhr.send()
+    }
+    //循环打印标签
+    function xh(arr){
+    var str = '';
+      for(var i=0;i<arr.length&&i<=3;i++){
+        str += `
+        <button class="xbtn">${arr[i]}</button>
+    `
+    if(i==1){
+      str += `
+     <br>
+    `
+    }
+      }
+      return str;
+   }
+   //查询相关素材
+   function xssc(orr,label){
+  var sskidval = sskid.value
+  console.log(sskidval)
+  console.log(orr)
+  console.log(label)
+  var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+         if(result.code == 1){
+           console.log(result)
+           xssc1.innerHTML = showlist(result.data)
+         }else {
+          console.log(result.msg)
+          xssc1.innerHTML=showlist([])
+         }
+         //console.log('22222',$('video'))  
+         $('video:gt(0)').mouseover(function (e) { 
+      $(this).trigger('play');
+     // console.log(11)
+    });
+
+    $('video:gt(0)').mouseout(function (e) { 
+       $(this).trigger('pause');
+    });
+      }
+    }
+}
+xhr.open("GET",`/user/query?label=${label}`,true)
+  xhr.send()
+}
+//渲染图片到页面
+function showlist(arr){
+  console.log(arr)
+  var str = '';
+  var num=[]
+  var  out = [];
+  //获取所有的lid
+  for(var q=0;q<arr.length;q++){
+     num[q]=arr[q].lid
+  }
+  //如果结果大于6个，那么随机且不重复找出6个随机id
+  if(num.length>9){
+    var temp_array = new Array();
+    for (var index in arr) {
+        temp_array.push(num[index]);
+    }
+    //取出的数值项,保存在此数组
+    var return_array = new Array();
+    for (var i = 0; i<10; i++) {
+        //判断如果数组还有可以取出的元素,以防下标越界
+        if (temp_array.length>0) {
+            //在数组中产生一个随机索引
+            var arrIndex = Math.floor(Math.random()*temp_array.length);
+            //将此随机索引的对应的数组元素值复制出来
+            return_array[i] = temp_array[arrIndex];
+            //然后删掉此索引的数组元素,这时候temp_array变为新的数组
+            temp_array.splice(arrIndex, 1);
+        } else {
+            //数组中数据项取完后,退出循环,比如数组本来只有10项,但要求取出20项.
+            break;
+        }
+    }
+  }
+  if(return_array==undefined){
+    return_array=[0]
+  }
+  console.log(return_array)
+  //如果总数小于6个
+  if(return_array.length<=9){
+  for(var i=0;i<arr.length;i++){
+    if(arr[i].ifvideo==1){
+      str += `
+      <a href="" onclick="details(${arr[i].lid})">
+        <video  x-webkit-airplay="true" webkit-playsinline="true" loop='loop' muted="" style="z-index: 1;position:relative" >
+                <source src="${arr[i].images}"alt="${arr[i].lid}"  type="video/mp4">
+             </video>
+        </a>
+     
+      `
+    }else{
+      str += `
+        <img src="${arr[i].images}"  alt="${arr[i].lid}" onclick="details(this.alt)">
+      `
+    }
+    if(i==2){
+
+      //str+=`<br>`
+    }
+  }
+  //  //如果总大于6个
+}else {
+  let o=0
+  //循环遍历整个相似，如果与随机6个重合则运行
+  for(var i=0;i<arr.length;i++){
+   // console.log(arr[i].lid)
+    if(return_array.indexOf(arr[i].lid)!=-1){
+     // console.log(arr[i].lid)
+     
+    if(arr[i].ifvideo==1){
+      str += `
+      <a href="" onclick="details(${arr[i].lid})">
+        <video  x-webkit-airplay="true" webkit-playsinline="true" loop='loop' muted="" style="z-index: 1;position:relative" >
+                <source src="${arr[i].images}"alt="${arr[i].lid}"  type="video/mp4">
+             </video>
+        </a>
+     
+      `
+    }else{
+      str += `
+        <img src="${arr[i].images}"  alt="${arr[i].lid}" onclick="details(this.alt)">
+      `
+    }
+    if(o==2){
+     
+     // str+=`<br>`
+    }
+    o++
+  }
+}
+}
+  return str;
+}
+//下载图片 
+   function xiazai(images){
+      let eleLink = document.createElement('a') 
+  eleLink.download = name 
+  eleLink.href = images 
+  eleLink.click() 
+
+
+    }
+    datails()  
+   //收藏图片
+    function coll1(id,img,video){
+
+     //console.log(video)
+  var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+         if(result.code == 1){
+           console.log(result)
+           console.log('添加成功')
+           coll();
+           setTimeout(() => {
+            datails()
+           }, 30);
+         }else {
+          swal(result.msg)
+         }
+      }
+    }
+}
+console.log(video)
+xhr.open("GET",`/user/coll?userid=${userinfo[0]}&pwid=${id}&img=${img}&ifvideo=${video}`,true)
+  xhr.send()
+    }       
+   //刷新收藏节目
+    function  coll(){
+      var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+         if(result.code == 1){
+           console.log(result.data)
+           sc.innerHTML = showlist1(result.data)
+           console.log('查询成功')
+         }else {
+          console.log(result.msg)
+         }
+      }
+    }
+}
+xhr.open("GET",`/user/Querycollection?userid=${userinfo[0]}`,true)
+  xhr.send()
+    }
+    //退出
+   function exit(){
+    sessionStorage.removeItem("user");
+    sessionStorage.setItem("scid",[,])
+    location.reload();
+   }
+//搜索转跳
+     function fun1(e){
+       if(e.keyCode==13){
+        location.href="./search.html"
+       }
+     }
+     function fun(){
+     console.log(sskid.value)
+     sessionStorage.setItem("key",`${sskid.value}`)
+	}
+  //转跳相似页面
+  function details(imgid){
+        sessionStorage.setItem("imgid",`${imgid}`)
+        location.href="./details.html"
+      }
+    //通过键盘切换图片
+      $(document).keydown(function(event){
+          if(event.keyCode == 37){
+            details_zuo()
+           }
+           if(event.keyCode == 39){
+            details_you()
+           }
+         }); 
+      //跳转前一个图片
+      function details_zuo(){
+        var a=(`${imgid}`*1-1)
+        if(a<1){return false}
+        
+        sessionStorage.setItem("imgid",`${a}`)
+        location.href="./details.html"
+      }
+     //跳转后一个图片
+      function details_you(){
+        var a=(`${imgid}`*1+1)
+        if(a>8777){return false}
+        
+        sessionStorage.setItem("imgid",`${a}`)
+        location.href="./details.html"
+      }
+         //搜索六个缩略图
+   function  coll(){
+      var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+         if(result.code == 1){
+           console.log(result.data)
+           chaxun(result.data)
+           sc.innerHTML = showlist1(result.data)
+           console.log('查询成功')
+         }else {
+          chaxun(result.data)
+          console.log(result.msg)
+          sc.innerHTML = showlist1([])
+         }
+      }
+    }
+}
+xhr.open("GET",`/user/Querycollection?userid=${userinfo[0]}`,true)
+  xhr.send()
+    }
+    function showlist1(arr){
+  var str = '';
+  for(var i=0;i<arr.length&&i<2;i++){
+    if(arr[i].ifvideo==0){
+      str += `
+    <p style="float: left;padding-right:4px ;">
+      <img src="${arr[i].img}" style="width: 60px;height: 45px;padding-bottom:10px;margin-right:10px;">
+    </p>      
+    `
+    }else{
+      str += `
+      <video  x-webkit-airplay="true" webkit-playsinline="true" style="width: 60px;height: 60px;padding-bottom:15px;margin-right:10px;" muted="">
+      <source src="${arr[i].img}" type="video/mp4">
+   </video>     
+    `
+    }
+  }
+  return str;
+}
+
+function fanhui(){
+  window.history.go(-1) 
+}
+//查找收藏id
+function chaxun(arr){
+  if(arr!=undefined){
+    scid=[]
+    for(var i=0;i<arr.length;i++){
+    scid[i] = `${arr[i].pwid}`
+  }
+  sessionStorage.setItem("scid",scid)
+  }else sessionStorage.setItem("scid",[,])
+ }
+ //取消收藏
+ function quxiao(id){
+  console.log(id)
+  //sessionStorage.setItem("scid",[,])
+ // sessionStorage.setItem("mylove",`${id}`)
+     var xhr = new XMLHttpRequest()
+      xhr.onreadystatechange = function(){
+        if(xhr.readyState == 4){
+          if(xhr.status>=200 && xhr.status<300){
+            var result = JSON.parse(xhr.responseText)
+            if(result.code==1){
+              coll();
+           setTimeout(() => {
+            datails();
+           }, 500);
+            }else {
+              coll();
+           setTimeout(() => {
+            datails()
+           }, 30);
+            }
+          }
+        }
+      }
+      xhr.open("DELETE",`/user/del2/${id}&${userinfo[0]}`,true)
+      xhr.send()
+    }
+</script>
+</body>
+</html>

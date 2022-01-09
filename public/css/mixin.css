@@ -1,0 +1,41 @@
+.btn1 {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #0aa1ed;
+  color: #fff;
+}
+
+.btn2 {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #0aa1ed;
+  color: #fff;
+}
+
+.box1 {
+  width: 100px;
+  height: 80px;
+  background-color: red;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px #ddd;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 10px;
+  box-shadow: 3px 3px 2px #ddd;
+  padding: 10px;
+}
+
+.d2 {
+  background-color: red;
+}
+.d2 span {
+  color: #fff;
+}
+
+/*# sourceMappingURL=mixin.css.map */

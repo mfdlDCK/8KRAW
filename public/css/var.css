@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/*css和scss都可以使用的注释*/
+body {
+  background-color: violet;
+}
+
+.box {
+  background-color: #ddd;
+}
+.box h1 {
+  font-size: 18px;
+}
+.box ul {
+  list-style: none;
+}
+.box ul li:nth-child(odd) {
+  background-color: red;
+}
+.box ul li:nth-child(even) {
+  background-color: yellow;
+}
+
+.head {
+  background-color: yellowgreen;
+}
+
+.b1 {
+  width: 100px;
+  background-color: red;
+  text-align: center;
+  height: 200px;
+}
+.b1 p {
+  width: 200px;
+}
+.b1 p {
+  color: violet;
+}
+.b1 p span {
+  color: orange;
+}
+.b1 p span {
+  text-align: right;
+}
+.b1 {
+  color: blue;
+}
+
+ul li {
+  color: red;
+}
+ul li:nth-child(odd) {
+  background-color: blue;
+}
+ul li:nth-child(even) {
+  background-color: yellow;
+}
+ul li:hover {
+  background-color: grey;
+}
+
+/*# sourceMappingURL=var.css.map */

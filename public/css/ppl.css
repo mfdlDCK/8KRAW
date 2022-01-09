@@ -1,0 +1,93 @@
+
+/*列表布局*/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery::after {
+    content: '';
+    flex-grow: 999999999;
+}
+.gallery .item{
+    position: relative;
+    flex-grow: 1;
+    margin: 5px;
+    background-color: #999999;
+    height: 154px;
+    overflow: hidden;
+    
+}
+.gallery .item:before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715) 0s;
+}
+.gallery .item:hover:before{
+    width: 100%;
+    left: 0;
+    opacity: 0.5;
+}
+
+.gallery .item img {
+    height: 154px;
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: bottom;
+}
+.gallery .item video {
+    height: 154px;
+    object-fit: cover;
+    max-width: 100%;
+    min-width: 100%;
+    vertical-align: bottom;
+}
+.gallery .dim-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gallery .dim-box .text{
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0;
+	transition: all 0.35s ease 0s;
+}
+.gallery .item:hover .text{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+.gallery .item a {
+    color: #999999;
+    height: 30px;
+    background: transparent;
+    padding: 2px 5px;
+    /* padding-top: 130px; */
+    font-size: 14px;
+    border: 0;
+    opacity: 0;
+    transform: translateY(50px);
+    outline:none;
+    transition: all 0.4s ease 0s;
+}
+.gallery .item:hover a{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.4s;
+}
+.gallery .item:hover a:last-child{
+    transition-delay: 0.5s;
+}
+/*结束*/

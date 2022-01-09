@@ -1,0 +1,23 @@
+body {
+  background-color: #f5f5f5;
+}
+/* 第一行 */
+.row1 >div >div {
+  /* height: 375px; */
+  height: 30vw;
+  /* 高度别高于1200时元素高度就行 */
+  max-height: 384px;
+  /* 限制最小高度别低于多少 */
+  min-height: 260px;
+}
+/* 第二行 */
+.row2 >.row2-1 >div {
+  height: 22vw;
+  max-height: 265px;
+  min-height: 260px;
+}
+.row2 .row2-2 .c3 > div {
+  height: 22vw;
+  max-height: 265px;
+  min-height: 260px;
+}

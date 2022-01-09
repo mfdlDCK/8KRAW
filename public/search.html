@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta --max-web-media-player-count=5000>
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <link rel="stylesheet" type="text/css" href="https://blog.huangwx.cn/css/sweetalert.css">
+<script type="text/javascript" src="https://blog.huangwx.cn/js/sweetalert-dev.js"></script>
+
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/ppl.css">
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <title>8Kraw</title>
+  <style>
+    body {
+      background-color: black;
+    }
+
+    * {
+      padding: 0px;
+      margin: 0;
+    }
+
+    .dh {
+      width: 100%;
+      height: 50px;
+      margin: auto;
+      background-color:rgba(0, 0, 0, 0.8)
+    }
+
+    .center {
+      width: 1170px;
+      margin: auto;
+    }
+
+    .dh div {
+      float: left;
+    }
+
+    .dh div a {
+      width: 100px;
+      height: 100%;
+
+    }
+
+    .dh div a:hover {
+      background-color: #222;
+    }
+
+    .dh .logo img {
+      width: 150px;
+      height: 50px;
+    }
+
+    .dh .logo {
+      margin-right: 20px;
+      display: inline-block;
+    }
+
+    .dh a {
+      display: inline-block;
+      width: 120px;
+      height: 30px;
+      color: #fff;
+      font-size: 14px; 
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .dh .dhyou {
+      float: right;
+      margin-right: 15px;
+    }
+
+    .dh .dhyou,.dhzuo {
+      height: 50px;
+      line-height: 50px;
+    }
+
+
+
+    .weibu li a,
+    .banhao a , .neirong .xx a{
+      color: rgb(104, 103, 103);
+    }
+
+   
+
+    .bq {
+      width: 100%;
+      height: 200px;
+      margin: auto;
+      background-color: #191919;
+      position: relative
+    }
+
+    .bq .weibu {
+      /* width: 1170px; */
+
+      margin: auto;
+      padding-top: 30px;
+
+    }
+
+    .weibu li {
+     float: left;
+       padding-left: 50px;
+      list-style: none;
+      color: #999999;
+      margin: 0 32px;
+      font-size: 15px;
+    }
+
+    .weibu li a,
+    .banhao a {
+      text-decoration: none
+    }
+
+    .fenge {
+      width: 61%;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .banhao {
+      /* width: 1170px; */
+      margin: auto;
+      padding-top: 30px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -130px;
+      margin-top: -20px;
+
+      color: #666666;
+    }
+
+    .banhao h5 {
+      margin-bottom: 15px;
+    }
+
+    .lbt {
+      width: 100%;
+      height: 350px;
+      position: relative
+    }
+
+    .ssklogo {
+      background-image: url(./img/ss.png);
+      /*设置小图标*/
+      background-size: 25px 25px;
+      /*小图标的大小*/
+      background-position: 13px 11px;
+      /*小图标在input的位置*/
+      background-repeat: no-repeat;
+      /*背景小图标不重复*/
+      padding: 8px 10px 8px 40px;
+      /*设置input内边距*/
+      /*设置input样式好看*/
+      width: 650px;
+      height: 50px;
+      border:1px solid #999999;
+      border-radius: 10px;
+      margin-top: 110px;
+      text-indent: 20px;
+      background-color: #222222;
+      font-size: 16px;
+      border: 0px;
+      color: #999999;
+    }
+    .hot{
+      color: #666666;
+    }
+
+    .lbt img {
+      width: 100%;
+      height: 350px;
+      /* display: block; */
+    }
+    .neirong ul{
+      float: left;
+    }
+    .dorp{
+   position: relative;
+  display: inline-block;
+    }
+
+.dorp_con{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp_con #sc {
+display: flex;
+}
+.dorp_con1{
+  display: none;
+  position: absolute;
+  background-color: rgb(34, 34, 34);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dorp:hover .dorp_con{display:block;}
+.dorp:hover .dorp_con1{display:block;}
+.hot a{
+      font-size: 14px;
+      text-decoration:none
+    }
+    .hot  a:link{
+       color:#666666;
+     }
+     .hot  a:visited{
+       color:#666666;
+     }
+    .hot  a:hover {
+       color:#666666;
+       
+       
+     }
+     .hot  a:active{
+       color:#666666;
+     }
+     .gallery{
+         
+     min-height: 470px;
+    
+     }
+  </style>
+</head>
+<body>
+  <!-- 以下是整个页面 -->
+  <div class="zong" style="min-width: 1170px;">
+    <!-- 以下是整个导航 -->
+    <div class="dh fixed-top" style="min-width: 900px;">
+      <div class="logo"><img src="./img/logo.png" alt=""></div>
+      <div class="dhzuo">
+        <a href="./index.html">视频</a>
+        <a href="./Pic.html">图片</a>
+        <a href="./problem.html">常见问题</a>
+        <a href="./about.html">关于我们</a>
+      </div>
+      <div class="dhyou" id="user">
+        <a href="./login.html" target="_self">登录</a>
+         <a href="#">EN</a>
+       
+      </div>
+    </div>
+    <!-- 以上是整个导航 -->
+
+    <!-- 以下是搜索框部分 -->
+    <div class="ssk text-center">
+      <div class="center">
+        <!-- 搜索框 -->
+        <!-- <div class="inputbox"> -->
+          <input type="text" onkeydown="fun1(event)" placeholder="搜索素材" autocomplete="off" class="ssklogo" id="sskid" >
+        <!-- </div> -->
+        <!-- 热搜 -->
+        <div class="hot"  style="font-size: 15px; color: #666666; padding-bottom: 10px;padding-top: 10px;">
+          当前热搜：
+          <span ><a href="./search.html" onclick="fun2(this)">城市</a></span>
+              <span ><a href="./search.html" onclick="fun2(this)">黄鹤楼</a></span>
+              <span ><a href="./search.html" onclick="fun2(this)">高空</a></span>
+              <span ><a href="./search.html" onclick="fun2(this)">青春</a></span>
+              <span ><a href="./search.html" onclick="fun2(this)">邹平</a></span>
+        </div>
+      </div>
+    </div>
+    <!-- 以上是搜索框部分 -->
+
+    <!-- 以下是内容部分 -->
+    <div class="center">
+      <div class="neirong" style="position: relative;width: 100%;">
+        <div class="xx" style="color: white;position: absolute; left: 50%;transform: translateX(-50%);color: #999999;padding-top: 10px;">
+          <div style="float: left; font-size: 15px;"><a href="#">热门素材</a></div>
+          <div style="float: left; margin: 0 70px;font-size: 15px;"><a href="#">最新上传</a></div>
+          <div style="float: left;font-size: 15px;"><a href="#">编辑推荐</a></div>
+          
+        </div>
+        <div class="xx" style="color: white;position: absolute; left: 50%;transform: translateX(-50%);width: 100%;color: #999999;padding-top: 35px;">
+          <HR  color=#686767 style="margin-top: 5px;margin-bottom: 5px;">
+          <div style="float: left; font-size: 15px; margin-right:15px;"><a href="#">视频</a></div>
+          <div style="float: left;font-size: 15px;margin-right:35px;"><a href="#">图片</a></div>
+          <div style="float: left;font-size: 15px;margin-right:10px;">视频质量</div>
+          <div style="float: left; font-size: 15px;margin-right:15px;"><a href="#">1080P</a></div>
+          <div style="float: left;font-size: 15px;margin-right:15px;"><a href="#">4K/6K</a></div>
+          <div style="float: left;font-size: 15px;margin-right:15px;"><a href="#">8K</a></div>
+          <div style="float: left;font-size: 15px;margin-right:30px;"><a href="#">10K/10K+</a></div>
+          <div style="float: left;font-size: 15px;margin-right:10px;">拍摄方式</div>
+          <div style="float: left; font-size: 15px;margin-right:15px;"><a href="#">航拍</a></div>
+          <div style="float: left;font-size: 15px;margin-right:15px;"><a href="#">地面</a></div>
+          <div style="float: left;font-size: 15px;margin-right:15px;"><a href="#">水下</a></div>
+          <div style="float: left;font-size: 15px;margin-right:30px;"><a href="#">VR</a></div>
+          <div style="float: left;font-size: 15px;margin-right:10px;">视频速率</div>
+          <div style="float: left; font-size: 15px;margin-right:15px;"><a href="#">延迟</a></div>
+          <div style="float: left;font-size: 15px;margin-right:15px;"><a href="#">视频</a></div>
+          <div style="float: left;font-size: 15px;margin-right:30px;"><a href="#">升格</a></div>
+          <div style="float: left;font-size: 15px;margin-right:10px;">时长</div>
+          <div style="float: left; font-size: 15px;margin-right:15px;"><a href="#">15-30S</a></div>
+          <div style="float: left;font-size: 15px;margin-right:15px;"><a href="#">30S-1min</a></div>
+          <div style="float: left;font-size: 15px;"><a href="#">1min以上</a></div>
+          <br>
+          <HR  color=#686767 style="margin-top:5px;">
+        </div>
+        <div class="pic">
+          <br><br><br><br>
+         
+        </div>
+      
+      
+        
+   </div>
+    </div>
+    <section class="gallery" style="padding:15px 30px 100px 30px;" id="imgs">
+   
+
+    </div>
+  </section>
+    <!-- 以上是内容部分 -->
+    <!-- 以下是版权部分 -->
+    <div class="bq"style="min-width: 1170px;">
+      <!-- 以下是链接部分 -->
+      <div class="weibu">
+        <div class="center">
+          <ul class="clearfix">
+            <li>
+            更多信息
+            <a href="./about.html">关于我们</a>
+            |
+            <a href="./about.html">我们的宗旨</a>
+           </li>
+           <li >
+             常见问题
+           <a href="./problem.html">素材版权</a>
+           |
+           <a href="./problem.html">素材价格与购买方式</a>
+           |
+           <a href="./problem.html">摄影师签约</a>
+         </li>
+   
+           <li>联系我们
+           <a href="./problem.html">意见与建议</a>
+           |
+            <a href="#">商务合作</a>
+           </li>
+          </ul> 
+        </div>
+
+      </div>
+      <!-- 以上是链接部分 -->
+      <div class="fenge">
+        <br style="background-color: #191919;">
+        <hr>
+      </div>
+      <div class="banhao">
+        <h6>©2017-2020 ICP备17045390号-1</h6>
+        <img src="./img/jh.png" alt="">
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902002882">沪公网安备 31010902002882号</a>
+      </div>
+
+    </div>
+    <!-- 以上是版权部分 -->
+  </div>
+  <!-- 以上是整个页面 -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script>
+    
+     $('video').mouseover(function (e) { 
+       console.log(111)
+      $(this).trigger('play');
+      $(this).addClass("shou").siblings().removeClass("shou");
+    });
+
+    $('video').mouseout(function (e) { 
+       $(this).trigger('pause');
+    });
+    //获取其他页面搜索值
+    sessionStorage.setItem("mylove",[,])
+   var  msg=window.sessionStorage.getItem('key')
+   document.getElementsByClassName('ssklogo')[0].value=msg
+   console.log(msg)
+      //获取登陆信息
+    var  userzfc=window.sessionStorage.getItem('user')
+    if(userzfc!=null){
+      var userinfo=userzfc.split(',')
+      console.log(userinfo)
+      var user = document.getElementById('user')
+      coll();
+           setTimeout(() => {
+            jump();
+           }, 10);
+      if(userinfo[0]==null){
+        user.innerHTML =  `<a href="./login.html" target="_self">登录</a>
+         <a href="#">EN</a>`
+      }else {
+        user.innerHTML = 
+        `<div class="dorp">
+          <a href="./Collection.html" target="_self">我的收藏</a>
+          <div class="dorp_con">
+            <div id="sc">
+             </div> 
+            
+          </div>
+          </div> 
+
+          <div class="dorp">
+            <a href="#">欢迎你,${userinfo[1]}</a>
+          <div class="dorp_con1">
+            <p style="font-size: 15px; color: white;text-align: center;" onclick="user1()">
+               个人中心
+             </p>
+            <p style="font-size: 15px; color: white;text-align: center;" onclick="exit()">
+               退出
+             </p>
+          </div>
+          </div> 
+         `
+      }
+    }else {
+      sessionStorage.setItem("scid",[,])
+      jump();
+    }
+    function user1(){
+    location.href="./user.html"
+  }  
+
+      //退出登录
+   function exit(){
+    sessionStorage.removeItem("user");
+    sessionStorage.setItem("scid",[,])
+    location.reload();
+   }
+   
+ //添加收藏
+    function coll1(id,img,video){
+     console.log(id)
+  var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+         if(result.code == 1){
+           console.log(result)
+           console.log('添加成功')
+           coll();
+           setTimeout(() => {
+            jump();
+           }, 300);
+           sessionStorage.setItem("mylove",`${id}`)
+         }else {
+          swal(result.msg)
+         }
+      }
+    }
+}
+xhr.open("GET",`/user/coll?userid=${userinfo[0]}&pwid=${id}&img=${img}&ifvideo=${video}`,true)
+  xhr.send()
+    }
+    //检测回车调用显示
+    function fun1(e){
+      if(e.keyCode==13){
+        jump()
+      }
+    }
+   
+   //显示搜索图片
+  function jump(){
+  var sskid = document.getElementById('sskid')
+  var imgs = document.getElementById('imgs')
+  var sskidval = sskid.value
+  sessionStorage.setItem("key",`${sskidval}`)
+  console.log(sskidval)
+  var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+         if(result.code == 1){
+           console.log(result)
+           imgs.innerHTML = showlist(result.data)
+         }else {
+          swal(result.msg)
+         }
+          
+         $('.dim-box').mouseover(function (e) { 
+
+      $(this).trigger('play');
+    });
+
+    $('.dim-box').mouseout(function (e) { 
+       $(this).trigger('pause');
+    });
+      }
+    }
+}
+xhr.open("GET",`/user/query?label=${sskidval}`,true)
+  xhr.send()
+}
+   //搜索六个缩略图
+   function  coll(){
+      var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState == 4){
+        if(xhr.status>=200&&xhr.status<300){
+          var result = JSON.parse(xhr.responseText)
+          chaxun(result.data)
+          if(result.code == 1){
+           sc.innerHTML = showlist1(result.data)
+           console.log('查询成功')
+         }else {
+          console.log(result.msg)
+          sc.innerHTML = showlist1([])
+         }
+      }
+    }
+}
+xhr.open("GET",`/user/Querycollection?userid=${userinfo[0]}`,true)
+  xhr.send()
+    }
+//返回所有图片
+function showlist(arr){
+  var  scid=window.sessionStorage.getItem('scid')
+  var scidinfo=scid.split(',')
+  console.log(scidinfo)
+  var str = '';
+  var i=0
+  
+  arr.forEach((value)=>{
+    i++
+    //if(i>=100){return false}
+    //console.log(value)
+    if(value.ifvideo==0){
+      if(scidinfo.indexOf(`${value.lid}`)!==-1){
+        console.log(`${value.lid}被收藏`)
+        str += `
+      <div class="item"  alt="${value.lid}" onclick="details(${value.lid},${value.ifvideo})">
+        <img src="${value.images} " loading="lazy">
+            <div class="dim-box">
+                <div class="btn">
+                  <a href="#" onclick="quxiao(${value.lid})"><b>取消收藏</b></a>
+                </div>
+            </div>
+        </div>
+      `
+      }else {
+        console.log('没有被收藏的图片')
+        str += `
+      <div class="item"  alt="${value.lid}" onclick="details(${value.lid},${value.ifvideo})">
+        <img src="${value.images}" loading="lazy">
+            <div class="dim-box">
+                <div class="btn">
+                  <a href="#" onclick="coll1(this.id,this.name,0)" id="${value.lid}" name="${value.images}"><b>加入收藏</b></a>
+                </div>
+            </div>
+        </div>
+      `
+      }
+    }else {
+      if(scidinfo.indexOf(`${value.lid}`)!==-1){
+        console.log(`${value.lid}被收藏`)
+        str += `
+      <div class="item"  alt="${value.lid}" onclick="details(${value.lid},${value.ifvideo})" class='video1'>
+        <video  loading="lazy" x-webkit-airplay="true" webkit-playsinline="true" muted=""">
+    <source src="${value.images}" type="video/mp4">
+ </video>   
+            <div class="dim-box">
+                <div class="btn">
+                  <a href="#" onclick="quxiao(${value.lid})"><b>取消收藏</b></a>
+                </div>
+            </div>
+        </div>
+      `
+      }else {
+        console.log('没有被收藏的图片')
+        str += `
+      <div class="item"  alt="${value.lid}" onclick="details(${value.lid},${value.ifvideo})" class='video1'>
+        <video loading="lazy"  x-webkit-airplay="true" webkit-playsinline="true" muted="" ">
+    <source src="${value.images}" type="video/mp4">
+ </video>   
+            <div class="dim-box">
+                <div class="btn">
+                  <a href="#" onclick="coll1(this.id,this.name,1)" id="${value.lid}" name="${value.images}"><b>加入收藏</b></a>
+                </div>
+            </div>
+        </div>
+      `
+      }
+    } 
+    
+  })
+  return str;
+}
+//进入详情
+      function details(imgid,ifvideo){
+        console.log(ifvideo)
+        sessionStorage.setItem("imgid",`${imgid}`)
+        sessionStorage.setItem("ifvideo",`${ifvideo}`)
+        setTimeout(() => {
+         location.href="./details.html"
+           }, 350);
+        
+      }
+//返回六个缩略图
+function showlist1(arr){
+  var str = '';
+  for(var i=0;i<arr.length&&i<2;i++){
+    if(arr[i].ifvideo==0){
+      str += `
+    <p style="float: left;padding-right:4px ;">
+      <img src="${arr[i].img}" style="width: 60px;height: 45px;padding-bottom:10px;margin-right:10px;">
+    </p>      
+    `
+    }else{
+      str += `
+      <video  x-webkit-airplay="true" webkit-playsinline="true" style="width: 60px;height: 60px;padding-bottom:15px;margin-right:10px;" muted="" alt="191" onclick="details(201,1)">
+      <source src="${arr[i].img}" type="video/mp4">
+   </video>     
+    `
+    }
+  }
+  return str;
+}
+function fun2(target){
+     console.log($(target).text())
+     sessionStorage.setItem("key",`${$(target).text()}`)
+	}
+function chaxun(arr){
+  if(arr!=undefined){
+    scid=[]
+    for(var i=0;i<arr.length;i++){
+    scid[i] = `${arr[i].pwid}`
+  }
+  sessionStorage.setItem("scid",scid)
+  }else sessionStorage.setItem("scid",[,])
+ }
+ //取消收藏
+function quxiao(id){
+  console.log(id)
+  sessionStorage.setItem("mylove",`${id}`)
+     var xhr = new XMLHttpRequest()
+      xhr.onreadystatechange = function(){
+        if(xhr.readyState == 4){
+          if(xhr.status>=200 && xhr.status<300){
+            var result = JSON.parse(xhr.responseText)
+            if(result.code==1){
+              coll();
+           setTimeout(() => {
+            jump();
+           }, 30);
+           
+            }
+          }
+        }
+      }
+      xhr.open("DELETE",`/user/del2/${id}&${userinfo[0]}`,true)
+      xhr.send()
+    }
+    
+ </script>
+</body>
+
+</html>
